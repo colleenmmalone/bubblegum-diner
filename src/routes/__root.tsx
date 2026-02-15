@@ -1,8 +1,9 @@
 import { HeadContent, Scripts, createRootRoute } from '@tanstack/react-router'
 
-import Header from '../components/ui/Header'
+import Header from '@/routes/layout/header'
 
-import appCss from '../styles.css?url'
+import appCss from '@/styles.css?url'
+import Footer from '@/routes/layout/footer'
 
 export const Route = createRootRoute({
   head: () => ({
@@ -37,9 +38,10 @@ function RootDocument({ children }: { children: React.ReactNode }) {
         <HeadContent />
       </head>
       <body>
-        <div className="min-h-screen pt-[40px] sm:pt-[88px] bg-cream">
+        <div className="min-h-screen pt-[40px] sm:pt-[88px] bg-cream flex flex-col">
           <Header />
           {children}
+          <Footer />
           <Scripts />
         </div>
       </body>

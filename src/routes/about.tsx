@@ -1,4 +1,5 @@
 import { createFileRoute } from '@tanstack/react-router'
+import PageContainer from './layout/page-container'
 
 export const Route = createFileRoute('/about')({ component: About })
 
@@ -6,10 +7,8 @@ function About() {
 
 
   return (
-    // <div className="min-h-screen bg-gradient-to-b from-slate-900 via-slate-800 to-slate-900">
-    // </div>
-    <section className="relative py-20 px-6 text-center overflow-hidden">about
-                          
-                        </section>
+    <PageContainer>
+      about
+    </PageContainer>
   )
 }
