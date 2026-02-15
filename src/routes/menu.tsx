@@ -1,4 +1,7 @@
 import { createFileRoute } from '@tanstack/react-router'
+import PageContainer from './layout/page-container'
+import MenuGrid from './menu/menu-grid'
+import PageTitle from './layout/page-title'
 
 export const Route = createFileRoute('/menu')({ component: Menu })
 
@@ -6,11 +9,9 @@ function Menu() {
 
 
   return (
-    // <div className="min-h-screen bg-gradient-to-b from-slate-900 via-slate-800 to-slate-900">
-      <section className="relative py-20 px-6 text-center overflow-hidden">
-       menu
-        
-      </section>
-    // </div>
+    <PageContainer>
+      <PageTitle title='Our Menu' />
+      <MenuGrid />
+    </PageContainer>
   )
 }

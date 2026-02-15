@@ -15,17 +15,22 @@ code {
 }
 
 @theme {
-  --color-turquoise: oklch(83% 22% 195deg);
+  /* custom colors */
   --color-cherry: oklch(65% 46% 5deg);
+  --color-turquoise: oklch(78% 36% 200deg);
   --color-cream: oklch(98% 6% 88deg);
 
+  /* custom font  */
+  --font-playfair: "Playfair Display", serif;
+
+  /* custom animation  */
   --animate-bop: bop 1s ease-in-out infinite;
 
   @keyframes bop {
 
     0%,
     100% {
-      transform: rotate(-3deg) ;
+      transform: rotate(-3deg);
     }
 
     50% {
