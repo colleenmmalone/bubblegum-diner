@@ -112,3 +112,14 @@ code {
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
 }
+
+h1.hero {
+text-shadow: var(--color-turquoise) 3px 3px 0px, #e755814d 6px 6px 0px;
+
+}
+
+@media (min-width: 600px) {
+  h1.hero{
+  text-shadow: var(--color-turquoise) 4px 4px 0px, #e755814d 8px 8px 0px;
+  }
+}

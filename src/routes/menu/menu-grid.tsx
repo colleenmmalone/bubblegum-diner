@@ -63,27 +63,40 @@ export default function MenuGrid() {
     // },
   ];
 
+  const filters = [
+    {
+      label: "Burgers",
+      icon: Hamburger,
+    },
+    {
+      label: "Shakes",
+      icon: IceCreamBowl,
+    },
+    {
+      label: "Sides",
+      icon: Salad,
+    },
+    {
+      label: "Desserts",
+      icon: Dessert,
+    },
+    {
+      label: "Drinks",
+      icon: CupSoda,
+    },  
+  ]
+
   return (
     <>
       <section className="sticky top-0 z-20 bg-white/95 backdrop-blur-sm shadow-md">
         <div className="max-w-6xl mx-auto px-4">
-          <div className="flex overflow-x-auto scrollbar-hide px-4 py-4 gap-3">
-            <button className="px-6 py-3 rounded-full font-bold whitespace-nowrap transition-all bg-cherry text-white shadow-lg scale-105">
-              <Hamburger /> Burgers
+          <div className="flex overflow-x-auto scrollbar-hide px-4 py-4 gap-4">
+            {filters.map((f, i) => (
+            <button className="flex gap-1 px-4 py-2 rounded-full whitespace-nowrap transition-all active:bg-cherry active:text-white bg-white text-cherry border-1 border-cherry/40">
+              <f.icon /> {f.label}
             </button>
-            <button className="px-6 py-3 rounded-full font-bold whitespace-nowrap transition-all bg-gray-100 text-gray-600 hover:bg-gray-200">
-                <IceCreamBowl />
-                 Shakes
-            </button>
-            <button className="px-6 py-3 rounded-full font-bold whitespace-nowrap transition-all bg-gray-100 text-gray-600 hover:bg-gray-200">
-              <Salad /> Sides
-            </button>
-            <button className="px-6 py-3 rounded-full font-bold whitespace-nowrap transition-all bg-gray-100 text-gray-600 hover:bg-gray-200">
-              <Dessert /> Desserts
-            </button>
-            <button className="px-6 py-3 rounded-full font-bold whitespace-nowrap transition-all bg-gray-100 text-gray-600 hover:bg-gray-200">
-              <CupSoda /> Drinks
-            </button>
+            ))}
+
           </div>
         </div>
       </section>
