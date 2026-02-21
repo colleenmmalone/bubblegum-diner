@@ -74,7 +74,7 @@ export default function Header() {
 
 
 
-        <nav className="sm:flex p-4 overflow-y-auto hidden ">
+        <nav className="hidden sm:flex p-4 overflow-y-auto gap-1">
           {testComp()}
         </nav>
 

@@ -15,11 +15,11 @@ export default function Hero() {
                 </h3>
 
                 {/* Bubblegum with two text shadows  */}
-                <h1 className="text-6xl font-playfair md:text-8xl lg:text-9xl font-black text-cherry mb-4 relative inline-block"
-                    style={{ textShadow: "var(--color-turquoise) 4px 4px 0px, #e755814d 8px 8px 0px" }} //cherry/30
+                <h1 className="hero text-6xl font-playfair md:text-8xl lg:text-9xl font-black text-cherry mb-4 relative inline-block"
                 >
                     Bubblegum
                 </h1>
+
                 <div className="flex items-center justify-center gap-4 mb-8">
 
                     {/* dash diner dash  */}
@@ -39,16 +39,15 @@ export default function Hero() {
                     >
                         🐩
                     </div>
-                </div><div className="flex flex-col sm:flex-row gap-4 justify-center">
-                    <a href="/Menu"><button className="px-10 py-4 bg-cherry text-white font-bold text-lg rounded-full shadow-lg hover:shadow-xl transition-all border-4 border-white" 
-                    // style="box-shadow: rgba(231, 84, 128, 0.4) 0px 4px 20px; transform: none;"
+                </div>
+                <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="/Menu"><button className="px-10 py-4 bg-cherry text-white font-bold text-lg rounded-full shadow-lg hover:shadow-xl transition-all border-4 border-white"
                     >
                         View Menu
                     </button>
                     </a>
                     <a href="/Jukebox">
                         <button className="px-10 py-4 bg-turquoise text-white font-bold text-lg rounded-full shadow-lg hover:shadow-xl transition-all border-4 border-white"
-                        // style="box-shadow: rgba(127, 219, 218, 0.4) 0px 4px 20px;"
                         >
                             🎵 Hit the Jukebox
                         </button>

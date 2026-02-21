@@ -22,7 +22,7 @@ export default function MenuCard(props: {
     <div className="group relative cursor-default ">
       <div className="bg-white border-4 border-turquoise/40 rounded-sm shadow-[4px_4px_0px_0px_rgba(231,84,128,0.3)] hover:translate-y-[-5px] hover:shadow-[6px_6px_0px_0px_rgba(231,84,128,0.4)] transition-all duration-500 overflow-hidden">
         {/* image section  */}
-        <div className="relative h-40 overflow-hidden">
+        <div className="relative h-60 overflow-hidden">
           <img
             src={src}
             alt={alt}
